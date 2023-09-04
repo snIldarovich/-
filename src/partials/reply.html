@@ -1,0 +1,87 @@
+<section class="reply">
+  <div class="container">
+    <div class="container-inner">
+      <div class="reply__wrapper">
+        <h3 class="reply__title">
+          Обсуждения
+        </h3>
+        <span class="reply__sum">
+          4 комментария
+        </span>
+        <div class="reply__form">
+          <div class="reply__user user flex">
+            <picture class="user__avatar">
+              <source srcset="../img/person-icon.webp" type="image/webp">
+              <img loading="lazy" src="../img/person-icon" class="image" width="" height="" alt="аватар">
+            </picture>
+            <div class="user__block">
+              <p class="user__name">Ксения Захарова</p>
+            </div>
+          </div>
+          <div class="reply__field text-field">
+            <textarea class="text-field__message" type="text" name="yourmessage" id="message" placeholder="Ваш ответ" required></textarea>
+
+            <label class="text-field__messages text-field__main--error">Добавьте сообщение и загрузите изображение</label>
+            <label class="text-field__messages text-field__img--error">Загрузите изображение</label>
+            <label class="text-field__messages text-field__answer--error">Добавьте сообщение</label>
+            <label class="text-field__messages text-field__submit--success">Ответ отправлен</label>
+            <div class="reply__btns">
+              <!--------->
+              @include('./upload.html')
+              <!--------->
+              <button id="submitButton" class="button">Отправить</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="reply__comments">
+          <div class="reply__post">
+            <div class="reply__post-inner">
+              <div class="reply__user reply__user--post user flex">
+                <picture class="user__avatar">
+                  <source srcset="../img/user-1.webp" type="image/webp">
+                  <img loading="lazy" src="../img/user-1.png" class="image" width="" height="" alt="аватар">
+                </picture>
+                <div class="user__block">
+                  <div class="user__block-wrap flex">
+                    <p class="user__name">Даниил Ефимов</p>
+                    <span>19 минут</span>
+                  </div>
+                  <p class="user__comment user-descr">
+                    Спасибо! очень интересная и полезная статья, но проблемное дело действительно
+                  </p>
+                </div>
+              </div>
+              <div class="reply__answer">
+                <a class="reply__answer-link" href="">Ответить</a>
+                <span class="reply__answer-num">11</span>
+              </div>
+            </div>
+            <div class="reply__comment">
+              <div class="reply__user reply__user--post user flex">
+                <picture class="user__avatar">
+                  <source srcset="../img/user-2.webp" type="image/webp">
+                  <img loading="lazy" src="../img/user-2.png" class="image" width="" height="" alt="аватар">
+                </picture>
+                <div class="user__block">
+                  <div class="user__block-wrap flex">
+                    <p class="user__name">Даниил Ефимов</p>
+                    <span>18.02, 10:14</span>
+                  </div>
+                  <picture class="user__img">
+                    <source srcset="../img/user-picture.webp" type="image/webp">
+                    <img loading="lazy" src="../img/user-picture" class="image" width="" height="" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="reply__answer">
+                <a class="reply__answer-link" href="">Ответить</a>
+                <span class="reply__answer-num reply__comment-num">6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

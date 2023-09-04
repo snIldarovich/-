@@ -1,0 +1,58 @@
+.accordeon {
+  margin-top: 65px;
+
+  &-wrapper {
+    border-radius: 10px;
+    padding: 32px 0;
+    background: #d8eafc;
+  }
+
+  &__content {
+    overflow: hidden;
+    max-height: 0;
+    font-size: var(--default-size);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &__box:first-child {
+    margin-top: 0;
+  }
+
+  &__btn {
+    position: relative;
+    outline: none;
+    border: none;
+    padding: 0 50px 0 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: var(--main-size);
+    text-align: left;
+    color: var(--basic-color);
+    background: transparent;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+  }
+
+  &__btn::after {
+    content: url("../../img/arrow-accordeon.png");
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    transform: translateY(-50%) rotate(0);
+    transition: ease-in-out 0.3s;
+  }
+
+  .active.accordeon__btn::after {
+    transform: translateY(-50%) rotate(-180deg);
+    transition: ease-in-out 0.3s;
+  }
+
+  .active.accordeon__btn + .accordeon__content {
+    margin-top: 30px;
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+  }
+}

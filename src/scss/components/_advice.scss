@@ -1,0 +1,81 @@
+.advice {
+  padding-top: 350px;
+  color: var(--basic-color);
+
+  &__title {
+    font-weight: 700;
+    font-size: var(--title-main-size);
+  }
+
+  &__quote {
+    display: block;
+    margin-top: 32px;
+    max-width: 342px;
+    font-weight: 500;
+    font-size: var(--main-size);
+  }
+
+  &__text {
+    margin-top: 77px;
+    font-weight: 500;
+    font-size: var(--main-size);
+    line-height: 1.25;
+  }
+
+  &__user {
+    margin-top: 32px;
+    margin-right: 182px;
+    margin-left: auto;
+    max-width: 320px;
+  }
+}
+
+.illustration {
+  margin-top: 30px;
+}
+
+.author {
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(#16293f, 0.8);
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: var(--default-size);
+  opacity: 0.6;
+}
+
+.user {
+  column-gap: 8px;
+  align-items: center;
+
+  &__block-wrap {
+    align-items: center;
+  }
+
+  &__block-wrap span {
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.4;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: var(--default-size);
+  }
+
+  &__comment {
+    margin-top: 15px !important;
+  }
+
+  &__descr {
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: var(--default-size);
+  }
+
+  &__img {
+    display: block;
+    margin-top: 15px;
+    max-width: 131px;
+  }
+}

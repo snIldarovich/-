@@ -1,0 +1,158 @@
+@media (max-width: 1070px) {
+  .advice {
+    padding-top: 35px;
+
+    &__title {
+      font-size: var(--title-size);
+    }
+
+    &__quote {
+      margin-top: 20px;
+      font-size: var(--default-size);
+    }
+
+    &__user {
+      margin: 20px 0 0;
+    }
+  }
+
+  .user__name,
+  .user__descr,
+  .user__comment,
+  .user__block-wrap span,
+  .reply__answer-link,
+  .reply__answer-num,
+  .author {
+    font-size: var(--small-size);
+  }
+
+  .illustration {
+    margin-top: 20px;
+  }
+
+  .advice__text {
+    margin-top: 20px;
+    font-size: var(--default-size);
+  }
+
+  .article__title {
+    padding-top: 25px;
+    font-size: var(--main-size);
+  }
+
+  .article .nav {
+    margin-top: 15px;
+  }
+
+  .nav__link {
+    font-size: var(--default-size) !important;
+  }
+
+  .article__note {
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: var(--small-size);
+  }
+
+  .article__text,
+  .article__example {
+    margin-top: 15px;
+    margin-left: 0;
+    font-size: var(--default-size);
+  }
+
+  .article__blockquote {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .article__quote {
+    margin-top: 10px;
+    font-size: var(--default-size);
+  }
+
+  .article .illustration {
+    margin-top: 20px;
+  }
+
+  .article .blockquote-addiction {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .article-steps__subtitle {
+    margin-top: 20px;
+    font-size: var(--main-size);
+  }
+
+  .article-steps__list {
+    margin-top: 10px;
+  }
+
+  .article-steps__item,
+  .article-steps__note {
+    font-size: var(--default-size);
+  }
+
+  .article-steps__item + .article-steps__item {
+    margin-top: 5px;
+  }
+
+  .accordeon {
+    margin-top: 20px;
+  }
+
+  .accordeon-wrapper {
+    padding: 15px;
+  }
+
+  .accordeon__btn {
+    font-size: var(--second-size);
+  }
+
+  .accordeon .active.accordeon__btn + .accordeon__content {
+    margin-top: 20px;
+  }
+
+  .accordeon__content {
+    font-size: var(--small-size);
+  }
+
+  .reply {
+    padding: 30px 0;
+  }
+
+  .reply__title {
+    font-size: 24px;
+  }
+
+  .reply__sum {
+    margin-top: 20px;
+    font-size: var(--small-size);
+  }
+
+  .reply__form {
+    margin-top: 15px;
+    padding: 15px 10px;
+  }
+
+  .button,
+  .btn.primary {
+    font-size: var(--small-size);
+  }
+
+  .reply__comments,
+  .reply__comment {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reply__wrapper {
+    padding: 0;
+  }
+
+  .user__block-wrap span {
+    margin-left: 20px;
+  }
+}
